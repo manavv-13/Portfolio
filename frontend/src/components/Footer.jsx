@@ -19,21 +19,21 @@ function Footer() {
         {/* Right Section - Social Media Links */}
         <div className={`flex gap-4 averia-serif-libre-regular ${darkMode ? 'text-white' : 'text-black'}`}>
           <a
-            href="https://github.com/yourgithub"
+            href="https://github.com/manavv-13"
             target="_blank"
             rel="noopener noreferrer"
           >
             <i className="fab fa-github text-2xl hover:text-gray-300"></i>
           </a>
           <a
-            href="https://linkedin.com/in/yourlinkedin"
+            href="https://www.linkedin.com/in/manav-nigam-977365224"
             target="_blank"
             rel="noopener noreferrer"
           >
             <i className="fab fa-linkedin text-2xl hover:text-gray-300"></i>
           </a>
           <a
-            href="https://instagram.com/yourinstagram"
+            href="https://www.instagram.com/_ansh17_/"
             target="_blank"
             rel="noopener noreferrer"
           >
