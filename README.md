@@ -73,5 +73,4 @@ Feel free to reach out:
 - **Email:** anshnigam034@gmail.com
 
 ---
-© {new Date().getFullYear()} Manav. All rights reserved.
 
