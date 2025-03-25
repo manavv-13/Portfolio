@@ -20,12 +20,15 @@ Portfolio/
 │-- backend/      # Node.js backend for handling emails
 │-- frontend/     # React frontend for the portfolio
 │   ├── src/
+│   │   ├── assets/      # Static Assets
 │   │   ├── components/  # Reusable components like Navbar, Footer
-│   │   ├── sections/    # Portfolio sections (Home, About, Projects, etc.)
+│   │   ├── sections/    # Portfolio sections (Main, About, Projects, etc.)
+│   │   ├── pages/       # Home Page to load all sections
 │   │   ├── context/     # Dark mode context
-│   │   ├── App.js       # Main App component
+│   │   ├── App.jsx      # Main App component
+│   │   ├── index.css    # Main CSS file
 │   │   ├── main.jsx     # Entry point
-│   ├── public/          # Static assets
+│   ├── public/          # Static PDF file
 │   ├── index.html       # Root HTML file
 │-- .gitignore
 │-- README.md
