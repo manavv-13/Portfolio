@@ -65,7 +65,7 @@ function Main() {
           </p>
           <div className="flex justify-between items-center gap-10">
             <Button text="Let's Connect →" section="contact" />
-            <Button text="My Resume →" download="/ManavNigamrResume.pdf" />
+            <Button text="My Resume →" download="/ManavNigam_Resume.pdf" />
           </div>
         </motion.div>
         <div
