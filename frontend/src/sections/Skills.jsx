@@ -47,20 +47,20 @@ function Skills() {
 
   return (
     <div
-      className={`container mx-auto my-5 ${darkMode ? "bg-black" : "bg-white"}`}
+      className={`my-4 ${darkMode ? "bg-black" : "bg-white"}`}
     >
       <h2
         className={`mx-2 text-5xl averia-serif-libre-bold ${
-          darkMode ? "text-[#29F500]" : "text-[#004AF5]"
+          darkMode ? "text-[#00a3f5]" : "text-[#132E35]"
         }`}
       >
         Here are my major{" "}
-        <span className={darkMode ? "text-[#B2B500]" : "text-[#B2B500]"}>
+        <span className={`${darkMode? "text-white":"text-[#2D4A53]"}`}>
           Skills
         </span>
       </h2>
 
-      <div className="my-4 mx-2 flex flex-wrap justify-center items-center gap-4 md:px-[150px]">
+      <div className="mt-4 mx-2 flex flex-wrap justify-center items-center gap-4 md:px-[150px]">
         {skills.map((skill, index) => {
           const { ref, inView } = useInView({
             triggerOnce: false,
@@ -76,8 +76,8 @@ function Skills() {
               variants={fadeInVariant}
               className={`cursor-pointer flex justify-center items-center gap-2 border-2 rounded-xl px-3 py-1 transition-all duration-300 hover:shadow-md hover:-translate-y-1 ${
                 darkMode
-                  ? "border-[#29F500] hover:bg-[#B2B500] hover:shadow-white"
-                  : "border-[#004AF5] hover:bg-[#B2B500] hover:shadow-black"
+                  ? "border-[#00a3f5] hover:bg-[#2D4A53] hover:shadow-white text-white"
+                  : "border-[#132E35] hover:bg-[#2D4A53] hover:shadow-black hover:text-white"
               }`}
             >
               {darkMode && skill.darkClass ? (
@@ -90,9 +90,7 @@ function Skills() {
                 />
               )}
               <p
-                className={`text-xl averia-serif-libre-regular ${
-                  darkMode ? "text-white" : "text-[#004AF5]"
-                }`}
+                className={`text-xl averia-serif-libre-regular`}
               >
                 {skill.name}
               </p>

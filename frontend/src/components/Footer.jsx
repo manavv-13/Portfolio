@@ -4,7 +4,7 @@ import ThemeContext from "../context/themeContext";
 function Footer() {
   const { darkMode } = useContext(ThemeContext);
   return (
-    <footer className={`mt-10 py-10 shadow-md ${darkMode ? 'text-white bg-black' : 'text-black bg-white'}`}>
+    <footer className={`py-10 shadow-md border-t border-opacity-25 ${darkMode ? 'text-white bg-black border-white' : 'text-black border-black bg-white'}`}>
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center px-6">
         {/* Left Section - Name or Logo */}
         <h2 className={`text-2xl font-bold averia-serif-libre-regular ${darkMode ? 'text-white' : 'text-black'}`}>
@@ -23,21 +23,14 @@ function Footer() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i className="fab fa-github text-2xl hover:text-gray-300"></i>
+            <i className="fab fa-github text-2xl hover:opacity-60"></i>
           </a>
           <a
             href="https://www.linkedin.com/in/manav-nigam-977365224"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i className="fab fa-linkedin text-2xl hover:text-gray-300"></i>
-          </a>
-          <a
-            href="https://www.instagram.com/_ansh17_/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="fab fa-instagram text-2xl hover:text-gray-300"></i>
+            <i className="fab fa-linkedin text-2xl hover:opacity-60"></i>
           </a>
         </div>
       </div>

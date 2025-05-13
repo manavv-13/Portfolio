@@ -11,6 +11,7 @@ function Home() {
   return (
     <>
       <Navbar/>
+      <div className="">
       <div id="home">
         <Main />
       </div>
@@ -25,6 +26,7 @@ function Home() {
       </div>
       <div id="contact">
         <Contact />
+      </div>
       </div>
       <Footer/>
     </>

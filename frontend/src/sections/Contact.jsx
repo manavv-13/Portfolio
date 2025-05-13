@@ -49,11 +49,11 @@ function Contact() {
   return (
     <>
       {/* Loading Bar */}
-      <LoadingBar color={darkMode ? "#29F500" : "#B2B500"} ref={loadingBarRef} />
+      <LoadingBar color={darkMode ? "#00a3f5" : "#2D4A53"} ref={loadingBarRef} />
 
-      <div className={`container mx-auto my-5 ${darkMode ? "bg-black text-white" : "bg-white text-black"}`}>
-        <h2 className={`mx-2 my-3 text-5xl averia-serif-libre-bold ${darkMode ? "text-[#29F500]" : "text-[#004AF5]"}`}>
-          Wanna Connect? <span className={darkMode ? "text-[#B2B500]" : "text-[#B2B500]"}>Contact Here!</span>
+      <div className={`my-3 mx-auto pb-10 ${darkMode ? "bg-black text-white" : "bg-white text-black"}`}>
+        <h2 className={`mx-2 py-3 mb-4 text-5xl averia-serif-libre-bold ${darkMode ? "text-[#00a3f5]" : "text-[#132E35]"}`}>
+          Wanna Connect? <span className={`${darkMode? "text-white":"text-[#2D4A53]"}`}>Contact Here!</span>
         </h2>
 
         <motion.form
@@ -62,7 +62,7 @@ function Contact() {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={inView ? { opacity: 1, scale: 1 } : {}}
           transition={{ duration: 0.7, ease: "easeOut" }}
-          className={`mx-2 flex flex-col gap-4 p-6 rounded-xl ${darkMode ? "bg-[#333] shadow-white shadow-lg text-white" : "bg-[#87ABFF] shadow-black shadow-lg text-black"}`}
+          className={`mx-2 flex flex-col gap-4 p-6 rounded-xl ${darkMode ? "bg-[#333] shadow-white shadow-lg text-white" : "bg-[#2D4A53] shadow-black shadow-lg text-white"}`}
         >
           <div className="flex flex-col">
             <label
@@ -76,7 +76,7 @@ function Contact() {
               id="email"
               name="email"
               value={formData.email}
-              className={`p-2 rounded-md focus:outline-none focus:border-2 ${darkMode ? "bg-[#222] text-white focus:border-[#29F500]" : "bg-white text-black focus:border-blue-500"}`}
+              className={`p-2 rounded-md focus:outline-none focus:border-2 ${darkMode ? "bg-[#222] text-white focus:border-[#00a3f5]" : "bg-white text-black focus:border-blue-500"}`}
               placeholder="Enter your email"
               required
               onChange={handleChange}
@@ -95,19 +95,21 @@ function Contact() {
               name="message"
               value={formData.message}
               rows="4"
-              className={`p-2 rounded-md focus:outline-none focus:border-2 ${darkMode ? "bg-[#222] text-white focus:border-[#29F500] placeholder-gray-400" : "bg-white text-black focus:border-blue-500 placeholder-gray-600"}`}
+              className={`p-2 rounded-md focus:outline-none focus:border-2 ${darkMode ? "bg-[#222] text-white focus:border-[#00a3f5] placeholder-gray-400" : "bg-white text-black focus:border-blue-500 placeholder-gray-600"}`}
               placeholder="Write your message here..."
               required
               onChange={handleChange}
             ></textarea>
           </div>
 
+          <div className="flex justify-center items-center">
           <button
-            className={`cursor-pointer text-xl averia-serif-libre-regular shadow-md shadow-black transition-all duration-300 hover:shadow-lg active:shadow-sm p-3 rounded-2xl bg-[#B2B500]  ${darkMode ? "text-black" : "text-[#004AF5]"}`}
+            className={`cursor-pointer w-[100px] text-xl averia-serif-libre-regular shadow-md shadow-black transition-all duration-300 hover:shadow-lg active:shadow-sm p-3 rounded-2xl bg-[#132E35]  ${darkMode ? "text-black" : "text-white"}`}
             disabled={loading}
           >
             {loading ? "Sending..." : "Send →"}
           </button>
+          </div>
         </motion.form>
       </div>
     </>
